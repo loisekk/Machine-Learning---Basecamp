@@ -1,17 +1,18 @@
 # 🏕️ Machine Learning Basecamp
 
-> A complete, beginner-friendly Machine Learning series — from raw data to advanced models. Every concept is backed by theory, real-world intuition, and hands-on projects.
+> A complete, beginner-friendly Machine Learning repository — from raw data to advanced models.
+> Every concept is backed by theory, real-world intuition, and hands-on projects.
 
 ---
 
-## 📚 Series Overview
+## 📚 Series Roadmap
 
 | Part | Topic | Status |
 |------|-------|--------|
-| [Part 1 — Foundations](#part-1--ml-foundations) | EDA, Data Cleaning, Feature Engineering | ✅ Done |
-| [Part 2 — Regression](#part-2--regression) | Linear Regression, Cost Function, Gradient Descent | ✅ Done |
-| [Part 3 — Classification](#part-3--classification) | Logistic Regression, KNN, SVM, Decision Trees, Naive Bayes | ✅ Done |
-| [Part 4 — Advanced ML](#part-4--advanced-ml) | Ensemble Methods, Clustering, PCA, XGBoost | ✅ Done |
+| Part 1 — Foundations | EDA, Data Cleaning, Feature Engineering | ✅ Done |
+| Part 2 — Regression | Linear Regression, Cost Function, Gradient Descent | 🔜 Coming Soon |
+| Part 3 — Classification | Logistic Regression, KNN, SVM, Decision Trees, Naive Bayes | 🔜 Coming Soon |
+| Part 4 — Advanced ML | Ensemble Methods, Clustering, PCA, XGBoost | 🔜 Coming Soon |
 
 ---
 
@@ -27,87 +28,59 @@
 - Feature Selection — choosing what matters
 - Feature Engineering — boosting model performance
 
+---
+
 ### 🔬 Projects
 
-#### Project 1 — Heart Disease Analysis
+#### 📌 Project 1 — Heart Disease EDA & Preprocessing
+
 Performed full EDA on a clinical heart disease dataset. Key work includes:
 - Handled zero-value anomalies in `Cholesterol` and `RestingBP` via mean imputation
-- Visualized distributions (histplots, violin plots) and relationships (heatmaps, countplots)
+- Visualized distributions using histplots and violin plots
+- Explored feature relationships using heatmaps and countplots
 - Applied One-Hot Encoding for categorical features
 - Scaled numerical features using `StandardScaler` — model-ready output
 
-**Dataset:** `heart.csv` | **Notebook:** [`Heart_Dataframe.ipynb`](./Heart_Dataframe.ipynb)
+**Notebook:** [`Heart_Dataframe.ipynb`](./Heart_Dataframe.ipynb)
 
-#### Project 2 — Insurance Charges Analysis
-End-to-end preprocessing pipeline on an insurance dataset. Key work includes:
+---
+
+#### 📌 Project 2 — Insurance Charges EDA & Feature Engineering
+
+End-to-end preprocessing pipeline on a medical insurance dataset. Key work includes:
 - Applied Label Encoding for binary columns (`sex`, `smoker`)
 - Applied One-Hot Encoding for the `region` column
 - Engineered a new `bmi_category` feature (Underweight / Normal / Overweight / Obese)
-- Used **Pearson Correlation** and **Chi-Square tests** for statistical feature selection
+- Used **Pearson Correlation** for numerical feature selection
+- Used **Chi-Square Test** for categorical feature selection
 - Final feature set selected for predicting insurance `charges`
 
-**Dataset:** `insurance.csv` | **Notebook:** [`Insurance_Dataframe.ipynb`](./Insurance_Dataframe.ipynb)
+**Notebook:** [`Insurance_Dataframe.ipynb`](./Insurance_Dataframe.ipynb)
 
 ---
 
-## Part 2 — Regression
+## 🔜 Coming Soon
 
-### What You'll Learn
-- What is Regression and where it's used
+### Part 2 — Regression
 - Linear Regression — concept and intuition
-- Cost Function and Gradient Descent (light intro)
-- Scikit-learn implementation of Linear Regression
+- Cost Function & Gradient Descent
 - Model Evaluation: MSE, RMSE, R² Score
 - Train-Test Split — why it matters
 - Overfitting vs Underfitting with visuals
+- **Project:** House Price Prediction
 
-### 🔬 Project — House Price Prediction
-Predicting house prices using Linear Regression on real-world data.
+### Part 3 — Classification
+- Logistic Regression, KNN, Decision Trees, Naive Bayes, SVM
+- Evaluation: Accuracy, Precision, Recall, F1-Score, Confusion Matrix
+- **Project:** Titanic Survival Classification
 
-**Resources:**
-- 📓 [Kaggle Notebook](https://www.kaggle.com/code/akarshvyas/notebook9fdd2dc0b8)
-- 💻 [Colab Notebook](https://colab.research.google.com/drive/1QlZkG9BSj_JHeqcjidEuVj-gTmwxLvBi?usp=sharing)
-
----
-
-## Part 3 — Classification
-
-### What You'll Learn
-- What is Classification and where it's used
-- Logistic Regression — binary classification
-- K-Nearest Neighbors (KNN) — classifying by similarity
-- Decision Trees — learning decisions step by step
-- Naive Bayes — probabilistic and powerful
-- Support Vector Machine (SVM) — drawing the best boundary
-- Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, Confusion Matrix
-
-### 🔬 Project — Titanic Survival Classification
-Classifying survival outcomes using real Titanic data with multiple algorithms.
-
-**Resources:**
-- 💻 [Colab Notebook](https://colab.research.google.com/drive/1iIujBR7WcySa15Z3JLdVRKcHT7YO-q9X?usp=sharing)
-- 🐙 [GitHub Code](https://github.com/AkarshVyas/Machine-Learning-Part-3)
-
----
-
-## Part 4 — Advanced ML
-
-### What You'll Learn
-- Model Tuning — why it matters
-- Cross-Validation — testing models the right way
-- Hyperparameter Tuning — Grid Search CV, Randomized Search CV
+### Part 4 — Advanced ML
+- Cross-Validation & Hyperparameter Tuning (Grid Search, Random Search)
 - Ensemble Learning — Bagging, Boosting, Stacking
 - Random Forest, AdaBoost, Gradient Boosting, XGBoost
 - Unsupervised Learning — K-Means, DBSCAN
-- Dimensionality Reduction — PCA + Curse of Dimensionality
-
-### 🔬 Projects
-- K-Means Clustering on real data
-- DBSCAN — complex cluster shapes
-- PCA visualizations
-
-**Resources:**
-- 🐙 [GitHub Code](https://github.com/AkarshVyas/Machine_learning_part4)
+- Dimensionality Reduction — PCA
+- **Projects:** Clustering & PCA visualizations
 
 ---
 
@@ -130,18 +103,10 @@ cd machine-learning-basecamp
 pip install -r requirements.txt
 ```
 
-Open any notebook in Jupyter or Google Colab and follow along with the series.
-
----
-
-## 👨‍💻 Instructor
-
-**Akarsh Vyas** — Building this series to make Machine Learning practical and accessible for everyone.
-
-> 💡 *Suggestion: Create your own structured notes as you go through each part. Writing concepts in your own words is the fastest way to truly understand them.*
+Open any notebook in Jupyter or Google Colab and follow along.
 
 ---
 
 ## ⭐ Support
 
-If this repo helped you, give it a star — it means a lot and helps others find it too!
+If this repo helped you, consider giving it a star — it helps others find it too!
