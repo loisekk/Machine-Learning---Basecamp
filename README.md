@@ -10,8 +10,8 @@
 | Part | Topic | Status |
 |------|-------|--------|
 | Part 1 — Foundations | EDA, Data Cleaning, Feature Engineering | ✅ Done |
-| Part 2 — Regression | Linear Regression, Cost Function, Gradient Descent | 🔜 Coming Soon |
-| Part 3 — Classification | Logistic Regression, KNN, SVM, Decision Trees, Naive Bayes | 🔜 Coming Soon |
+| Part 2 — Regression | Linear Regression, Cost Function, Gradient Descent | ✅ Done |
+| Part 3 — Classification | Logistic Regression, KNN, SVM, Decision Trees, Naive Bayes | ✅ Done |
 | Part 4 — Advanced ML | Ensemble Methods, Clustering, PCA, XGBoost | 🔜 Coming Soon |
 
 ---
